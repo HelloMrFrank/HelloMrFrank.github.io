@@ -1,0 +1,31 @@
+/* Dark-first surfaces: purple-ink instead of Butterfly's default #121212.
+   Only applies when the theme is in dark mode; the light toggle is unchanged. */
+[data-theme='dark'] {
+  --global-bg: #14121A;
+  --card-bg: #1C1923;
+  --sidebar-bg: #1C1923;
+  --sidebar-menu-bg: #221E2C;
+  --search-bg: #1C1923;
+  --tab-border-color: #2C2836;
+  --tab-button-bg: #221E2C;
+  --tab-button-hover-bg: #2A2534;
+  --tab-button-active-bg: #1C1923;
+  --preloader-bg: #14121A;
+  --blockquote-bg: #221E2C;
+  --reward-pop: #221E2C;
+  --timeline-bg: #221E2C;
+  --zoom-bg: #14121A;
+  --scrollbar-color: #5C5470;
+  --card-box-shadow: 0 3px 8px 6px rgba(0, 0, 0, .28);
+  --card-hover-box-shadow: 0 3px 10px 6px rgba(0, 0, 0, .4);
+}
+
+[data-theme='dark'] #page-header.nav-fixed > #nav,
+[data-theme='dark'] #page-header.not-top-img > #nav {
+  background: rgba(20, 18, 26, .86);
+}
+
+/* Avoid a muddy black overlay on the configured page background in dark mode. */
+[data-theme='dark'] #web_bg:before {
+  background-color: transparent;
+}
